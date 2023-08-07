@@ -356,6 +356,8 @@ func (s *TableList) MakeValid(header []string, defaultFamily string) {
 
 	if s.HeaderContentSpace == zeroValue {
 		s.HeaderContentSpace = 4.0
+	} else if s.HeaderContentSpace < 0 {
+		s.HeaderContentSpace = 0.0
 	}
 
 	if s.VerticalContentPadding < zeroValue {
