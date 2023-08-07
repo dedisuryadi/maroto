@@ -2,6 +2,8 @@ module github.com/johnfercher/maroto
 
 go 1.13
 
+replace github.com/johnfercher/maroto => github.com/dedisuryadi/maroto v0.0.0-20230807071603-a941ef0fc747
+
 require (
 	github.com/boombuler/barcode v1.0.1
 	github.com/google/uuid v1.3.0
